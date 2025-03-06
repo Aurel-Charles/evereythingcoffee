@@ -1,0 +1,55 @@
+<section id="smart-brew-timer">
+    <h2>Smart Brew Timer</h2>
+    {{/* Select recipe section */}}
+    <label for="saved-recipe-timer">Load a Saved Recipe:</label>
+    <select id="saved-recipe-timer">
+        <option value="">-- Select a Recipe --</option>
+    </select>
+    <button id="delete-timer-recipe">Delete Selected Recipe</button>
+    
+    <!-- Recipe Inputs -->
+    <label for="ratio">Coffee-to-Water Ratio:</label>
+    <input type="text" id="ratio" value="1:16" />
+
+    <label for="coffee-amount">Coffee Amount (g):</label>
+    <input type="number" id="coffee-amount" />
+
+    <label for="water-amount">Water Amount (ml):</label>
+    <input type="number" id="water-amount" />
+
+    <label for="brew-time-minutes">Brew Time:</label>
+    <input type="number" id="brew-time-minutes" min="0" step="1" placeholder="Min" />
+    <input type="number" id="brew-time-seconds" min="0" max="59" step="1" placeholder="Sec" />
+
+    <label for="bloom-time">Bloom Time (Seconds):</label>
+    <input type="number" id="bloom-time" min="0" step="1" value="30" />
+
+    <label for="pour-steps">Number of Pouring Steps:</label>
+    <input type="number" id="pour-steps" min="1" max="5" step="1" value="2" />
+
+    <!-- Dynamic Pour Step Inputs -->
+    <div id="pour-steps-container"></div>
+
+    <button id="start-timer">Start Timer</button>
+    <button id="reset-timer">Reset</button>
+
+    <!-- Timer Display -->
+    <div id="timer-display">
+        <svg width="200" height="200">
+            <circle cx="100" cy="100" r="90" stroke="#ddd" stroke-width="10" fill="none"></circle>
+            <circle id="progress-circle" cx="100" cy="100" r="90" stroke="green" stroke-width="10" fill="none"
+                stroke-dasharray="565.48" stroke-dashoffset="565.48" stroke-linecap="round"></circle>
+        </svg>
+        <p id="timer-text">00:00</p>
+        <p id="brew-step">Waiting...</p>
+    </div>
+
+    <!-- Water Tracking Display -->
+    <div id="water-tracking">
+        <h3>Water Tracking</h3>
+        <p>Poured: <span id="water-poured">0</span> ml / <span id="water-target">0</span> ml</p>
+    </div>
+
+</section>
+
+<script src="/js/smart-brewer.js"></script>

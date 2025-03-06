@@ -1,0 +1,37 @@
+baseURL = "https://example.com/"
+languageCode = "en-us"
+title = "Coffee Brewing Tools"
+theme = "terminal"
+
+[params]
+  description = "A collection of coffee brewing tools"
+  themeColor = "auto"  # Options: "light", "dark", "auto"
+  showMenuItems = 6
+  fullWidthTheme = true
+  centerTheme = false
+
+[menus]
+    [[menu.main]]
+        name = "Ratio Calculator"
+        url = "/tools/ratio-calculator/"
+        weight = 1
+
+    [[menu.main]]
+        name = "Brew Timer"
+        url = "/tools/brew-timer/"
+        weight = 2
+
+    [[menu.main]]
+        name = "Grind Size Guide"
+        url = "/tools/grind-size-guide/"
+        weight = 3
+
+    [[menu.main]]
+        name = "Custom Recipe Builder"
+        url = "/tools/custom-recipes/"
+        weight = 4
+
+    [[menu.main]]
+        name = "Smart Brewer"
+        url = "/tools/smart-brewer/"
+        weight = 5

@@ -1,0 +1,50 @@
+<section id="custom-recipe-builder">
+    <h2>Custom Recipe Builder</h2>
+
+    <!-- Select Brew Method -->
+    <label for="brew-method">Brew Method:</label>
+    <select id="brew-method">
+        <option value="">-- Select a Method --</option>
+        <option value="french-press">French Press</option>
+        <option value="pour-over">Pour-Over</option>
+        <option value="espresso">Espresso</option>
+        <option value="moka-pot">Moka Pot</option>
+        <option value="aeropress">AeroPress</option>
+    </select>
+
+    <!-- Input Fields -->
+    <label for="ratio">Coffee-to-Water Ratio:</label>
+    <input type="text" id="ratio" />
+    
+
+    <label for="coffee-amount">Coffee Amount (grams):</label>
+    <input type="number" id="coffee-amount" />
+
+    <label for="water-amount">Water Amount (ml):</label>
+    <input type="number" id="water-amount" />
+
+    <label for="brew-time">Brew Time:</label>
+    <div class="brew-time-container">
+        <label for="brew-time-minutes">Minutes:</label>
+        <input type="number" id="brew-time-minutes" min="0" step="1" placeholder="Min" />
+    
+        <label for="brew-time-seconds">Seconds:</label>
+        <input type="number" id="brew-time-seconds" min="0" max="59" step="1" placeholder="Sec" />
+    </div>
+    
+
+
+    <label for="grind-size">Grind Size:</label>
+    <input type="text" id="grind-size" readonly />
+
+    <!-- Save Recipe -->
+    <label for="recipe-name">Recipe Name:</label>
+    <input type="text" id="recipe-name" placeholder="Enter a name" />
+    <button id="save-recipe">Save Recipe</button>
+
+    <!-- Saved Recipes -->
+    <h3>Saved Recipes</h3>
+    <ul id="saved-recipes"></ul>
+</section>
+
+<script src="/js/custom-recipe.js"></script>

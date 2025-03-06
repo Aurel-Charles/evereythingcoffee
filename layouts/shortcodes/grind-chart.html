@@ -1,0 +1,68 @@
+<section id="grind-size-guide">
+    <h2>Grind Size Guide</h2>
+
+    <div id="grind-chart-container">
+        <svg id="grind-chart" viewBox="0 0 700 300">
+            <!-- X-Axis in Beige -->
+            <line x1="50" y1="200" x2="650" y2="200" stroke="#f4e1c1" stroke-width="3" />
+
+            <!-- X-Axis Labels (Grind Sizes) in Beige -->
+            <text x="50" y="220" fill="#f4e1c1">Coarse</text>
+            <text x="200" y="220" fill="#f4e1c1">Medium-Coarse</text>
+            <text x="350" y="220" fill="#f4e1c1">Medium</text>
+            <text x="500" y="220" fill="#f4e1c1">Medium-Fine</text>
+            <text x="650" y="220" fill="#f4e1c1">Fine</text>
+
+            <!-- Micron Scale Above the X-Axis -->
+            <text x="50" y="180" fill="#f4e1c1">1000µ</text>
+            <text x="200" y="180" fill="#f4e1c1">800µ</text>
+            <text x="350" y="180" fill="#f4e1c1">600µ</text>
+            <text x="500" y="180" fill="#f4e1c1">400µ</text>
+            <text x="650" y="180" fill="#f4e1c1">200µ</text>
+
+            <!-- Brewing Methods Labels (Now Distributed in Three Rows) -->
+
+            <!-- Row 1 (Coarse to Medium-Coarse) -->
+            <g class="brew-method" transform="translate(80, 10)">
+                <rect width="180" height="30" fill="lightgreen" />
+                <text x="10" y="20">French Press</text>
+            </g>
+
+            <g class="brew-method" transform="translate(50, 100)">
+                <rect width="180" height="30" fill="lightblue" />
+                <text x="10" y="20">Cold Brew</text>
+            </g>
+
+            <!-- Row 2 (Medium-Coarse to Medium) -->
+            <g class="brew-method" transform="translate(230, 40)">
+                <rect width="180" height="30" fill="orange" />
+                <text x="10" y="20">Chemex</text>
+            </g>
+
+            <g class="brew-method" transform="translate(210, 70)">
+                <rect width="200" height="30" fill="lightgreen" />
+                <text x="10" y="20">Pour-Over</text>
+            </g>
+
+            <g class="brew-method" transform="translate(370, 100)">
+                <rect width="180" height="30" fill="brown" />
+                <text x="10" y="20">AeroPress</text>
+            </g>
+
+            <!-- Row 3 (Medium-Fine to Fine) -->
+            <g class="brew-method" transform="translate(500, 40)">
+                <rect width="150" height="30" fill="lightyellow" />
+                <text x="10" y="20">Moka Pot</text>
+            </g>
+
+            <g class="brew-method" transform="translate(550, 70)">
+                <rect width="150" height="30" fill="red" />
+                <text x="10" y="20">Espresso</text>
+            </g>
+        </svg>
+    </div>
+
+    <p id="grind-description">Hover over a brew method to see details.</p>
+</section>
+
+<script src="/js/grind-chart.js"></script>

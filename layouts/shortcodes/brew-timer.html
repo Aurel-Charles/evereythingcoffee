@@ -1,0 +1,21 @@
+<section id="brew-timer">
+    <h2>Brew Timer</h2>
+    <p>Set the Brew Timer</p>
+    <!-- Minute input -->
+    <label for="minutes">Minutes:</label>
+    <input type="number" id="minutes" value="{{ .Get "minutes" | default "4" }}" min="0" step="1" />
+
+    <!-- Second input -->
+    <label for="seconds">Seconds:</label>
+    <input type="number" id="seconds" value="{{ .Get "seconds" | default "0" }}" min="0" max="59" step="1" />
+
+    <button id="start-timer">Start</button>
+    <button id="stop-timer" disabled>Stop</button>
+    <button id="reset-timer">Reset</button>
+
+    <div id="countdown">
+        <p>Time remaining: <span id="time-left">00:00</span></p>
+    </div>
+</section>
+
+<script src="/js/brew-timer.js"></script>
