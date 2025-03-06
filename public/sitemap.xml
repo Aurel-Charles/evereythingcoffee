@@ -2,29 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://example.com/</loc>
     <lastmod>2025-03-06T11:13:49+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tools/smart-brewer/</loc>
+    <loc>https://example.com/tools/smart-brewer/</loc>
     <lastmod>2025-03-06T11:13:49+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tools/</loc>
+    <loc>https://example.com/tools/</loc>
     <lastmod>2025-03-06T11:13:49+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tools/custom-recipes/</loc>
-    <lastmod>2025-03-04T12:22:12+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tools/grind-size-guide/</loc>
+    <loc>https://example.com/tools/grind-size-guide/</loc>
     <lastmod>2025-03-04T12:20:40+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tools/brew-timer/</loc>
+    <loc>https://example.com/tools/brew-timer/</loc>
     <lastmod>2025-03-04T12:17:18+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tools/ratio-calculator/</loc>
-    <lastmod>2025-03-04T12:11:54+01:00</lastmod>
+    <loc>https://example.com/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://example.com/tags/</loc>
   </url>
 </urlset>
