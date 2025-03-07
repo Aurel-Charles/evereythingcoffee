@@ -35,3 +35,8 @@ theme = "terminal"
         name = "Smart Brewer"
         url = "/tools/smart-brewer/"
         weight = 5
+
+    [[menu.main]]
+        name = "Aurel"
+        url = "/tools/aurel/"
+        weight = 6
